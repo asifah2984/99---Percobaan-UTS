@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:flutter_application_1/oppo/oppoa.dart';
+import 'package:flutter_application_1/oppo/oppofindx.dart';
+import 'package:flutter_application_1/oppo/oppok.dart';
+import 'package:flutter_application_1/oppo/oppomirror.dart';
+import 'package:flutter_application_1/oppo/opponeo.dart';
+import 'package:flutter_application_1/oppo/opporeno.dart';
 import 'package:flutter_application_1/utama.dart';
 
 class MyFive extends StatelessWidget {
@@ -24,6 +30,8 @@ class MyFive extends StatelessWidget {
     var gambarhpOPPOK      = "images/Oppo/Oppo-K10-5G.jpg";
     var gambarhpOPPONEO    = "images/Oppo/Oppo-Find-X3-Neo.jpg";
     var gambarhpOPPOMirror = "images/Oppo/Oppo-Mirror-5-Lite.jpg"; 
+
+    var tombolbawah     = "Masuk";
 
     //var ukurtinggi  = 400;
     //var ukurlebar   = 800;
@@ -58,6 +66,16 @@ class MyFive extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isiOPPOFindX)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Myoppofindx(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),
@@ -72,6 +90,16 @@ class MyFive extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isiOPPOReno)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Myopporeno(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),
@@ -86,6 +114,16 @@ class MyFive extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isiOPPOA)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Myoppoa(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),
@@ -100,6 +138,16 @@ class MyFive extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isiOPPOK)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Myoppok(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),
@@ -114,6 +162,16 @@ class MyFive extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isiOPPONEO)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Myopponeo(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),
@@ -128,6 +186,16 @@ class MyFive extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isiOPPOMirror)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Myoppomirror(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),

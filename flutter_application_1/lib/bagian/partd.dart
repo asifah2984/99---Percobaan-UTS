@@ -2,6 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter_application_1/utama.dart';
+import 'package:flutter_application_1/vivo/Vivov.dart';
+import 'package:flutter_application_1/vivo/vivos.dart';
+import 'package:flutter_application_1/vivo/vivot.dart';
+import 'package:flutter_application_1/vivo/vivox.dart';
+import 'package:flutter_application_1/vivo/vivoy.dart';
+import 'package:flutter_application_1/vivo/vivoz.dart';
 
 class MyFour extends StatelessWidget {
   const MyFour({super.key});
@@ -25,6 +31,8 @@ class MyFour extends StatelessWidget {
     var gambarhpVivoSeriV = "images/Vivo/Vivo-V20.jpg";
     var gambarhpVivoSeriX = "images/Vivo/Vivo-X70.jpg";
     
+    var tombolbawah     = "Masuk";
+
     //var ukurtinggi  = 400;
     //var ukurlebar   = 800;
 
@@ -58,6 +66,16 @@ class MyFour extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isiVivoSeriY)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Myvivoy(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),
@@ -72,6 +90,16 @@ class MyFour extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isiVivoSeriS)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Myvivos(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),
@@ -86,6 +114,16 @@ class MyFour extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isiVivoSeriT)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Myvivot(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),
@@ -100,6 +138,16 @@ class MyFour extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isiVivoSeriZ)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Myvivoz(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),
@@ -114,6 +162,16 @@ class MyFour extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isiVivoSeriV)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Myvivov(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),
@@ -128,6 +186,16 @@ class MyFour extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isiVivoSeriX)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Myvivox(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),

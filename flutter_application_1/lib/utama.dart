@@ -3,11 +3,11 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter_application_1/loop.dart';
 import 'package:flutter_application_1/main.dart';
-import 'package:flutter_application_1/parta.dart';
-import 'package:flutter_application_1/partb.dart';
-import 'package:flutter_application_1/partc.dart';
-import 'package:flutter_application_1/partd.dart';
-import 'package:flutter_application_1/parte.dart';
+import 'package:flutter_application_1/bagian/parta.dart';
+import 'package:flutter_application_1/bagian/partb.dart';
+import 'package:flutter_application_1/bagian/partc.dart';
+import 'package:flutter_application_1/bagian/partd.dart';
+import 'package:flutter_application_1/bagian/parte.dart';
 
 class MySwift extends StatefulWidget {
   const MySwift({super.key});

@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:flutter_application_1/iphone/Iphone11.dart';
+import 'package:flutter_application_1/iphone/Iphone12.dart';
+import 'package:flutter_application_1/iphone/Iphone13.dart';
+import 'package:flutter_application_1/iphone/Iphone14.dart';
+import 'package:flutter_application_1/iphone/Iphonese.dart';
+import 'package:flutter_application_1/iphone/Iphonex.dart';
+import 'package:flutter_application_1/iphone/Iphonexr.dart';
+import 'package:flutter_application_1/iphone/Iphonexs.dart';
 import 'package:flutter_application_1/utama.dart';
 
 class MyOne extends StatelessWidget {
@@ -28,6 +36,8 @@ class MyOne extends StatelessWidget {
     var gambarhpIphoneXR  = "images/Iphone/Iphone-XR.jpg";
     var gambarhpIphoneX   = "images/Iphone/Iphone-X-Space-Gray.jpg";
     var gambarhpIphoneSE  = "images/Iphone/Iphone-Se.jpg";
+
+    var tombolbawah     = "Masuk";
 
     //var ukurtinggi  = 400;
     //var ukurlebar   = 800;
@@ -62,6 +72,16 @@ class MyOne extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isihpIphone14)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Myiphone14(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),
@@ -76,6 +96,16 @@ class MyOne extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isihpIphone13)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Myiphone13(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),
@@ -90,6 +120,16 @@ class MyOne extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isihpIphone12)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Myiphone12(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),
@@ -104,6 +144,16 @@ class MyOne extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isihpIphone11)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Myiphone11(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),
@@ -118,6 +168,16 @@ class MyOne extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isihpIphoneXS)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Myiphonexs(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),
@@ -132,6 +192,16 @@ class MyOne extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isihpIphoneXR)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Myiphonexr(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),
@@ -146,6 +216,16 @@ class MyOne extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isihpIphoneX)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Myiphonex(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),
@@ -160,6 +240,16 @@ class MyOne extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isihpIphoneSE)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Myiphonese(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),

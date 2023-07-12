@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:flutter_application_1/samsung/samsunga.dart';
+import 'package:flutter_application_1/samsung/samsungfold.dart';
+import 'package:flutter_application_1/samsung/samsungm.dart';
+import 'package:flutter_application_1/samsung/samsungs.dart';
+import 'package:flutter_application_1/samsung/samsungzflip.dart';
 import 'package:flutter_application_1/utama.dart';
 
 class MyTwo extends StatelessWidget {
@@ -22,6 +27,8 @@ class MyTwo extends StatelessWidget {
     var gambarhpsamsungseriS      = "images/Samsung/Samsung-Galaxy-S21-FE-5G.jpg";
     var gambarhpsamsungseriZflip  = "images/Samsung/Samsung-Galaxy-Z-Flip-5G.jpg";
     var gambarhpsamsungseriford   = "images/Samsung/Samsung-Galaxy-Fold.jpg";
+
+    var tombolbawah     = "Masuk";
 
     //var ukurtinggi  = 400;
     //var ukurlebar   = 800;
@@ -55,6 +62,16 @@ class MyTwo extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isisamsungseriA)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Mysamsunga(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),
@@ -69,6 +86,16 @@ class MyTwo extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isisamsungseriM)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Mysamsungm(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),
@@ -83,6 +110,16 @@ class MyTwo extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isisamsungseriS)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Mysamsungs(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),
@@ -97,6 +134,16 @@ class MyTwo extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isisamsungseriZflip)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Mysamsungzflip(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),
@@ -111,6 +158,16 @@ class MyTwo extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isisamsungserifold)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Mysamsungfold(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),

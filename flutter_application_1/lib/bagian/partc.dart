@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter_application_1/utama.dart';
+import 'package:flutter_application_1/xiaomi/poco.dart';
+import 'package:flutter_application_1/xiaomi/redmi.dart';
+import 'package:flutter_application_1/xiaomi/xiaomi.dart';
 
 class MyThree extends StatelessWidget {
   const MyThree({super.key});
@@ -18,6 +21,8 @@ class MyThree extends StatelessWidget {
     var gambarhpxiaomi  = "images/Xiaomi/Xiaomi-MI-11.jpg";
     var gambarhpredmi   = "images/Xiaomi/Xiaomi-Redmi-Note-10.jpg";
     var gambarhppoco    = "images/Xiaomi/Xiaomi-Poco-F4.jpg";
+
+    var tombolbawah     = "Masuk";
 
     //var ukurtinggi  = 400;
     //var ukurlebar   = 800;
@@ -52,6 +57,16 @@ class MyThree extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isixiaomi)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Myxiaomi(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),
@@ -66,6 +81,16 @@ class MyThree extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isiredmi)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Myredmi(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),
@@ -80,6 +105,16 @@ class MyThree extends StatelessWidget {
                   width: 800,
                 ),
                 Center(child: Text(isipoco)),
+                ElevatedButton(
+                  child: Text(tombolbawah),
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Mypoco(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),
