@@ -14,7 +14,7 @@ class _MyLocalState extends State<MyLocal> {
 
   var headtas     = "Human Error";
   var isi         = "Maaf anda tidak bisa masuk website ini";
-  var gambar      = "images/Tambah/Penutup.jpg";
+  var gambar      = "images/Tambah/cfoto.jpg";
   var tombolbawah = "Kembali Aplikasi";
 
   @override
