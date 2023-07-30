@@ -1,3 +1,5 @@
+import 'dart:convert';
+import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/main.dart';
 import 'package:flutter_application_1/samsung/samsunga/cart_screen.dart';
@@ -11,7 +13,6 @@ class PaymentConfirmScreen extends StatefulWidget {
 }
 
 class _PaymentConfirmScreenState extends State<PaymentConfirmScreen> {
-
   var judulbar = "Konfirmasi Pembayaran";
   var karma = "Kartu Pertma";
   var kardu = "Kartu Kedua";
@@ -49,7 +50,8 @@ class _PaymentConfirmScreenState extends State<PaymentConfirmScreen> {
             color: Colors.black,
           ),
         ),
-        title: Text(judulbar,
+        title: Text(
+          judulbar,
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.w700,
@@ -100,7 +102,8 @@ class _PaymentConfirmScreenState extends State<PaymentConfirmScreen> {
                                           color: Colors.grey)),
                             ],
                           ),
-                          Image.asset(gamma,
+                          Image.asset(
+                            gamma,
                             height: 100,
                             width: 200,
                           ),
@@ -146,7 +149,8 @@ class _PaymentConfirmScreenState extends State<PaymentConfirmScreen> {
                             ],
                           ),
 
-                          Image.asset(gamdu,
+                          Image.asset(
+                            gamdu,
                             height: 100,
                             width: 200,
                           ),
@@ -206,7 +210,8 @@ class _PaymentConfirmScreenState extends State<PaymentConfirmScreen> {
                                           color: Colors.grey)),
                             ],
                           ),
-                          Image.asset(gamga,
+                          Image.asset(
+                            gamga,
                             height: 100,
                             width: 200,
                           ),
@@ -228,7 +233,7 @@ class _PaymentConfirmScreenState extends State<PaymentConfirmScreen> {
                       ),
                     ),
                     Text(
-                      "\$300.00",
+                      "\$5.000.000",
                       style: TextStyle(
                         fontSize: 15,
                         fontWeight: FontWeight.w400,
@@ -250,7 +255,7 @@ class _PaymentConfirmScreenState extends State<PaymentConfirmScreen> {
                       ),
                     ),
                     Text(
-                      "\$15.00",
+                      "\$ 150.000",
                       style: TextStyle(
                         fontSize: 15,
                         fontWeight: FontWeight.w400,
@@ -278,7 +283,7 @@ class _PaymentConfirmScreenState extends State<PaymentConfirmScreen> {
                       ),
                     ),
                     Text(
-                      "\$315.00",
+                      "\$5.150.000",
                       style: TextStyle(
                         fontSize: 15,
                         fontWeight: FontWeight.w400,
@@ -289,13 +294,47 @@ class _PaymentConfirmScreenState extends State<PaymentConfirmScreen> {
                 ),
                 SizedBox(height: 70),
                 GestureDetector(
-                  onTap: () {
+                  onTap: () async {
                     Navigator.of(context).pushReplacement(
                       MaterialPageRoute(
                         builder: (context) => const MySwift(),
                       ),
                     );
+
+                    Map<String, String> headers = {
+                      'Content-Type': 'application/json',
+                      'Accept': 'application/json'
+                    };
+
+                    var response = await http.post(
+                        Uri.parse('http://localhost:1337/api/hand-phones'),
+                        headers: headers,
+                        body: jsonEncode({
+                          "data": {
+                            "Merek": "Samsung A50S",
+                            "Jenis": "Samsung",
+                            "Nominal": [5150000],
+                            // "Judul": judulController.text,
+                            // "Isi": isiController.text,
+                            // "Judul": "Teknik Komputer",
+                            // "isi": "Teknik Komputer",
+                            // "title": "Hello",
+                            // "relation": 2,
+                            // "relations": [2, 4],
+                            // "link": {"id": 1, "type": "abc"}
+                          }
+                        }));
+
+                    // print(judulController.text);
                   },
+
+                  // onTap: () {
+                  //   Navigator.of(context).pushReplacement(
+                  //     MaterialPageRoute(
+                  //       builder: (context) => const MySwift(),
+                  //     ),
+                  //   );
+                  // },
                   child: Container(
                     height: 45,
                     width: size.width,

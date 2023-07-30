@@ -85,9 +85,11 @@ class _MySwiftState extends State<MySwift> {
               ),
               child: Text(header),
             ),
+
             ListTile(
               title: Text(list),
             ),
+            
             ListTile(
               leading: Icon(Icons.adjust),
               title: Text(namasatu),
@@ -151,15 +153,16 @@ class _MySwiftState extends State<MySwift> {
         title: Text(judul),
       ),
 
-      floatingActionButton: FloatingActionButton(
-          child: const Icon(Icons.home),
-          onPressed: () {
-            Navigator.of(context).pushReplacement(
-              MaterialPageRoute(
-                builder: (context) => const MyLocal(),
-              ),
-            );
-          }),
+      // floatingActionButton: FloatingActionButton(
+      //     child: const Icon(Icons.home),
+      //     onPressed: () {
+      //       Navigator.of(context).pushReplacement(
+      //         MaterialPageRoute(
+      //           builder: (context) => const MyLocal(),
+      //         ),
+      //       );
+      //     }
+      //   ),
           
       body: Container(
           color: Colors.purple,
