@@ -17,12 +17,11 @@ class MyEvo extends StatefulWidget {
 }
 
 class _MyEvoState extends State<MyEvo> {
-
-  var namabar         = "Aplikasi Toko Handphone Indonesia";
-  var namapenjelasan  = "Ini adalah Toko Rahasia";
-  var labelsatu       = "Username";
-  var labeldua        = "Password";
-  var tombolbawah     = "Login Masuk";
+  var namabar = "Aplikasi Toko Handphone Indonesia";
+  var namapenjelasan = "Ini adalah Toko Rahasia";
+  var labelsatu = "Username";
+  var labeldua = "Password";
+  var tombolbawah = "Login Masuk";
 
   @override
   Widget build(BuildContext context) {
@@ -34,11 +33,9 @@ class _MyEvoState extends State<MyEvo> {
             MaterialPageRoute(
               builder: (context) => const MyLocal(),
             ),
-
           );
         },
       ),
-
       appBar: AppBar(
         title: Text(namabar),
       ),
@@ -48,22 +45,17 @@ class _MyEvoState extends State<MyEvo> {
             padding: const EdgeInsets.all(8.0),
             child: Column(
               children: [
-
                 Text(namapenjelasan),
-
                 TextField(
                   decoration: InputDecoration(labelText: labelsatu),
                 ),
-
                 TextField(
                   obscureText: true,
                   decoration: InputDecoration(labelText: labeldua),
                 ),
-
                 const SizedBox(
                   height: 15.0,
                 ),
-                
                 ElevatedButton(
                   child: Text(tombolbawah),
                   onPressed: () {
@@ -74,17 +66,12 @@ class _MyEvoState extends State<MyEvo> {
                     );
                   },
                 ),
-
               ],
             ),
-
           ),
-
         ],
       ),
-
     );
-
   }
 }
 

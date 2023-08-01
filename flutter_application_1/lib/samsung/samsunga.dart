@@ -16,12 +16,9 @@ class Mysamsunga extends StatefulWidget {
 }
 
 class _MysamsungaState extends State<Mysamsunga> {
-
   @override
-
   Widget build(BuildContext context) {
-    
-    var namabar     = "Samsung";
+    var namabar = "Samsung";
 
     // var isisamsungA10S = "Samsung A10S";
     var isisamsungA20S = "Samsung A20S";
@@ -35,8 +32,7 @@ class _MysamsungaState extends State<Mysamsunga> {
     var gambarhpsamsungA50S = "images/Samsung/JenisA/SamsungGalaxyA50s.jpg";
     // var gambarhpsamsungA70S = "images/Samsung/Samsung-Galaxy-Fold.jpg";
 
-
-    var tombolbawah     = "Masuk";
+    var tombolbawah = "Masuk";
 
     //var ukurtinggi  = 400;
     //var ukurlebar   = 800;
@@ -45,8 +41,6 @@ class _MysamsungaState extends State<Mysamsunga> {
       appBar: AppBar(
         title: Text(namabar),
       ),
-      
-      
       floatingActionButton: Padding(
         padding: const EdgeInsets.only(left: 30),
         child: Row(
@@ -63,7 +57,6 @@ class _MysamsungaState extends State<Mysamsunga> {
               },
             ),
             Expanded(child: Container()),
-            
             FloatingActionButton(
               child: const Icon(Icons.shopping_cart),
               onPressed: () {
@@ -74,12 +67,9 @@ class _MysamsungaState extends State<Mysamsunga> {
                 );
               },
             ),
-
           ],
         ),
       ),
-      
-
       body: ListView(
         padding: const EdgeInsets.all(20),
         children: <Widget>[
@@ -274,10 +264,8 @@ class _MysamsungaState extends State<Mysamsunga> {
           //     ],
           //   ),
           // ),
-          
         ],
       ),
-
-    );  
+    );
   }
 }

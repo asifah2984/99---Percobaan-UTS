@@ -11,10 +11,9 @@ class MyLocal extends StatefulWidget {
 }
 
 class _MyLocalState extends State<MyLocal> {
-
-  var headtas     = "Human Error";
-  var isi         = "Maaf anda tidak bisa masuk website ini";
-  var gambar      = "images/Tambah/cfoto.jpg";
+  var headtas = "Human Error";
+  var isi = "Maaf anda tidak bisa masuk website ini";
+  var gambar = "images/Tambah/cfoto.jpg";
   var tombolbawah = "Kembali Aplikasi";
 
   @override
@@ -23,14 +22,10 @@ class _MyLocalState extends State<MyLocal> {
       appBar: AppBar(
         title: Text(headtas),
       ),
-      
-      body:Column(
+      body: Column(
         children: [
-
           Center(child: Text(isi)),
-          
-          Image.asset( width: 800, height: 350, gambar),
-
+          Image.asset(width: 800, height: 350, gambar),
           ElevatedButton(
             child: Text(tombolbawah),
             onPressed: () {
@@ -41,10 +36,8 @@ class _MyLocalState extends State<MyLocal> {
               );
             },
           ),
-
         ],
       ),
-
     );
   }
 }
